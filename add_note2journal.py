@@ -59,6 +59,6 @@ if __name__ == '__main__':
     utitle = utitle_without_comment.strip().format(**context)
     new_note.title = utitle.encode('utf8')
     noteStore.updateNote(new_note)
-    
-    print(u'Note created: %s' % utitle)
+
+    print(f'Note created: {utitle}')
     print('Done')
